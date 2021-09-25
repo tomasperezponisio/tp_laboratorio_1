@@ -9,12 +9,18 @@
 #define CALCULADORA_H_
 #include <stdio.h>
 
-/// \brief muestra un menu de opciones y retorna como entero la opcion seleccionada
+/// \brief muestra un menu de opciones y retorna como entero la opcion seleccionada. Recibe 4 enteros,
+///        dos son flags para iniciar el menu sin que se hayan recibido los operandos,
+///        los otros dos son los operandos a ser mostrados una vez que se vayan ingresando
 ///
+/// \param flagOpA int
+/// \param operandoA int
+/// \param flagOpB int
+/// \param operandoB int
 /// \return int
 ///
 ///
-int menu();
+int menu(int flagOpA, int operandoA, int flagOpB, int operandoB);
 
 /// \brief Recibe dos valores int y una direccion de memoria, si se puede hacer la suma escribe
 ///        en la direccion y devuelve 1, si la suma no se pudo hacer devuelve 0

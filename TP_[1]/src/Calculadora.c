@@ -9,13 +9,21 @@
 #include <stdlib.h>
 #include "Calculadora.h"
 
-int menu() {
+int menu(int flagOpA, int operandoA, int flagOpB, int operandoB) {
 	int opcion;
 
 	system("cls");
 	printf("///--- CALCULADORA ---///\n");
-	printf("1. Ingresar 1er operando (A = x)\n");
-	printf("2. Ingresar 2do operando (B = y)\n");
+	if (flagOpA == 0) {
+		printf("1. Ingresar 1er operando (A = X)\n");
+	} else {
+		printf("1. Ingresar 1er operando (A = %d)\n", operandoA);
+	}
+	if (flagOpB == 0) {
+		printf("1. Ingresar 1er operando (B = Y)\n");
+	} else {
+		printf("1. Ingresar 1er operando (B = %d)\n", operandoB);
+	}
 	printf("3. Calcular todas las operaciones\n");
 	printf("  * Suma (A + B)\n");
 	printf("  * Resta (A - B)\n");

@@ -38,7 +38,7 @@ int main(void) {
 	int flagCalcular = 0;
 
 	do {
-		switch (menu()) {
+		switch (menu(flagOpA, operandoA, flagOpB, operandoB)) {
 		case 1:
 			printf("1er operando. ");
 			operandoA = pedirEntero();
@@ -153,7 +153,6 @@ int main(void) {
 						"Hay que calcular las operaciones para mostrar los resultados\n");
 			} else {
 				printf("Muestra los resultados \n");
-				printf("   A = %d y B = %d\n", operandoA, operandoB);
 				if (flagSuma) {
 					printf("   La suma da: %d \n", resultadoSuma);
 				} else {
