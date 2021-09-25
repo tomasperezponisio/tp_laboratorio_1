@@ -20,9 +20,9 @@ int menu(int flagOpA, int operandoA, int flagOpB, int operandoB) {
 		printf("1. Ingresar 1er operando (A = %d)\n", operandoA);
 	}
 	if (flagOpB == 0) {
-		printf("1. Ingresar 1er operando (B = Y)\n");
+		printf("1. Ingresar 2do operando (B = Y)\n");
 	} else {
-		printf("1. Ingresar 1er operando (B = %d)\n", operandoB);
+		printf("1. Ingresar 2do operando (B = %d)\n", operandoB);
 	}
 	printf("3. Calcular todas las operaciones\n");
 	printf("  * Suma (A + B)\n");
