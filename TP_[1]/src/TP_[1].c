@@ -129,15 +129,15 @@ int main(void) {
 	                        switch (factorial(operandoA, &resultadoFactorialA))
 	                        {
 	                        case 0:
-	                            printf("   No se pudo calcular el factorial, direccion de memoria == NULL\n");
+	                            printf("   No se pudo calcular el factorial de A, direccion de memoria == NULL\n");
 	                            flagFactorialA = 0;
 	                            break;
 	                        case 1:
-	                            printf("   El factorial se hizo\n");
+	                            printf("   El factorial de A se hizo\n");
 	                            flagFactorialA = 1;
 	                            break;
 	                        case 2:
-	                            printf("   No se pudo calcular el factorial del primer operando, fuera de rango, debe ser >= 0 y <= 12\n");
+	                            printf("   No se pudo calcular el factorial de A, fuera de rango, debe ser >= 0 y <= 12\n");
 	                            flagFactorialA = 0;
 	                            break;
 	                        }
@@ -145,15 +145,15 @@ int main(void) {
 	                        switch (factorial(operandoB, &resultadoFactorialB))
 	                        {
 	                        case 0:
-	                            printf("   No se pudo calcular el factorial, direccion de memoria == NULL\n");
+	                            printf("   No se pudo calcular el factorial de B, direccion de memoria == NULL\n");
 	                            flagFactorialB = 0;
 	                            break;
 	                        case 1:
-	                            printf("   El factorial se hizo\n");
+	                            printf("   El factorial de B se hizo\n");
 	                            flagFactorialB = 1;
 	                            break;
 	                        case 2:
-	                            printf("   No se pudo calcular el factorial del segundo operando, fuera de rango, debe ser >= 0 y <= 12\n");
+	                            printf("   No se pudo calcular el factorial de B, fuera de rango, debe ser >= 0 y <= 12\n");
 	                            flagFactorialB = 0;
 	                            break;
 	                        }
