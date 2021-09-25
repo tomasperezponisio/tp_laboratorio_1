@@ -25,7 +25,7 @@ int menu();
 /// \return int
 ///
 ///
-int sumar(int operandoA, int operandoB, int* resultado);
+int sumar(int operandoA, int operandoB, int *resultado);
 
 /// \brief Recibe dos valores int y una direccion de memoria, si se puede hacer la resta escribe en
 ///        la direccion y devuelve 1, si la resta no se pudo hacer devuelve 0
@@ -36,7 +36,7 @@ int sumar(int operandoA, int operandoB, int* resultado);
 /// \return int
 ///
 ///
-int restar(int operandoA, int operandoB, int* resultado);
+int restar(int operandoA, int operandoB, int *resultado);
 
 /// \brief Recibe dos valores int y una direccion de memoria si se puede hacer la division escribe
 ///        en la direccion y devuelve 1, si la division no se pudo hacer por NULL en la direccion
@@ -48,8 +48,7 @@ int restar(int operandoA, int operandoB, int* resultado);
 /// \return int
 ///
 ///
-int dividir(int operandoA, int operandoB, float* resultado);
-
+int dividir(int operandoA, int operandoB, float *resultado);
 
 /// \brief Recibe dos valores int y una direccion de memoria si se puede hacer la multiplicacion escribe
 ///        en la direccion y devuelve 1, si la multiplicacion no se pudo hacer por NULL en la direccion
@@ -61,8 +60,7 @@ int dividir(int operandoA, int operandoB, float* resultado);
 /// \return int
 ///
 ///
-int multiplicar(int operandoA, int operandoB, int* resultado);
-
+int multiplicar(int operandoA, int operandoB, int *resultado);
 
 /// \brief Recibe un valor y una direccion de memoria, si se puede hacer el factoral devuelve 1, si no se pudo
 ///        realizar devuelve 0 por NULL en la direccion de memoria o devuelve 2 por recibir un operando fuera de rango
@@ -73,6 +71,6 @@ int multiplicar(int operandoA, int operandoB, int* resultado);
 /// \return int
 ///
 ///
-int factorial(int operandoA, int* resultado);
+int factorial(int operandoA, int *resultado);
 
 #endif /* CALCULADORA_H_ */
