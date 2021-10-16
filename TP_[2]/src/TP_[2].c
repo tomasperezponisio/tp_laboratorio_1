@@ -17,22 +17,11 @@
 #define TAM 1000
 
 int main(void) {
+	setbuff(stdout, NULL);
 	char seguir = 's';
 	char salir;
 	int nextId = 20000;
 	employee list[TAM];
-
-	//---*******     LISTA DE EMPLEADOS HARDCODEADOS PARA PROBAR
-	/*employee list[TAM] =
-	 {
-	 {1, "Juan", "Perez", 10000, 1, 0},
-	 {222, "Maria", "Garcia", 12000, 1, 0},
-	 {333, "Julia", "Balinia", 11000, 3, 0},
-	 {444, "Pedro", "Corrales", 13500, 2, 0},
-	 {555, "Cristina", "Ponisio", 15000, 1, 0},
-	 {666, "Alejandro", "Perez", 16500, 3, 0},
-	 {777, "Paula", "Gomez", 9500, 2, 0}
-	 };*/
 
 	if (initEmployees(list, TAM)) {
 		printf("Error al iniciar list\n");
