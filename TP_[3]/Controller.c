@@ -509,7 +509,7 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
         if ( pFile == NULL )
         {
             printf("No se pudo abrir el archivo\n");
-            exit(1);
+
         }
 
         fprintf( pFile, "id,nombre,horasTrabajadas,sueldo\n" );
@@ -555,7 +555,7 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
         if ( pFile == NULL )
         {
             printf("No se pudo abrir el archivo\n");
-            exit(1);
+
         }
 
         for (int i = 0; i < ll_len(pArrayListEmployee); i++)
