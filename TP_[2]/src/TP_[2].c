@@ -17,7 +17,7 @@
 #define TAM 1000
 
 int main(void) {
-	setbuff(stdout, NULL);
+	setbuf(stdout, NULL);
 	char seguir = 's';
 	char salir;
 	int nextId = 20000;
