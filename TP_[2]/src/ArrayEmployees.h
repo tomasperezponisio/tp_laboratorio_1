@@ -140,5 +140,7 @@ int editEmployee(employee list[], int len);
  *
  */
 int editMenu(employee list[], int len, int indice);
+int salaryPromedio(employee list[], int len, float *pSalario, float *sumaSalarios);
+int cobranBien(employee list[], int len, float salarioPromedio, float totalSalario);
 
 #endif /* ARRAYEMPLOYEES_H_ */

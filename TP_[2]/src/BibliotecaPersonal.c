@@ -86,8 +86,8 @@ int pedirCadena(char cadena[], char mensaje[], int limite) {
 		fflush(stdin);
 		gets(auxCad);
 
-		while (miStrlen(auxCad) > limite || validarCadena(auxCad) == 1) {
-			printf("Por favor ingresar solo letras (maximo %d): ", limite);
+		while ( miStrlen(auxCad) < 3 || miStrlen(auxCad) > limite || validarCadena(auxCad) == 1) {
+			printf("Por favor ingresar solo letras (minimo 3 - maximo %d): ", limite);
 			fflush(stdin);
 			gets(auxCad);
 		}

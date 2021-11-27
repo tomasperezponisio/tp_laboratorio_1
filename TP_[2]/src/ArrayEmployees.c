@@ -20,7 +20,8 @@ int menu() {
 	printf("2- Modificar Empleado\n");
 	printf("3- Baja Empleado\n");
 	printf("4- Informar Empleados\n");
-	printf("5- Salir\n");
+	printf("5- Informe Salarios\n");
+	printf("6- Salir\n");
 	printf("Ingrese opcion: ");
 	fflush(stdin);
 	scanf("%d", &opcion);
@@ -384,3 +385,55 @@ int editMenu(employee list[], int len, int indice) {
 	return opcion;
 }
 
+int salaryPromedio(employee list[], int len, float *pSalario, float *sumaSalarios)
+{
+    int todoOk = -1;
+    float auxSalario = 0;
+    int contadorSalarios = 0;
+
+    if (list != NULL && len > 0)
+    {
+        for(int i = 0; i < len; i++)
+        {
+            if (list[i].isEmpty == 0 )
+            {
+                auxSalario += list[i].salary;
+                contadorSalarios++;
+            }
+        }
+        todoOk = 0;
+
+        *pSalario = (float)auxSalario /contadorSalarios;
+        *sumaSalarios = auxSalario;
+    }
+    return todoOk;
+}
+
+
+int cobranBien(employee list[], int len, float salarioPromedio, float totalSalario)
+{
+    int todoOk = -1;
+    int contador = 0;
+
+    salaryPromedio(list,len, &salarioPromedio, &totalSalario);
+
+    if (list != NULL && len > 0)
+    {
+        for(int i = 0; i < len; i++)
+        {
+            if (list[i].isEmpty == 0 )
+            {
+                if(list[i].salary > salarioPromedio)
+                {
+                    printEmployee(list[i]);
+                    contador++;
+                }
+            }
+        }
+        todoOk = 0;
+    }
+
+    printf("Hay %d persona/s que cobra/n mas del promedio de salarios en total\n", contador);
+
+    return todoOk;
+}
